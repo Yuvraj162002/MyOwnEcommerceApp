@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="110dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:backgroundTint="#dcdcdc"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/IV_new_product"
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/kid3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TV_name_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="NEW Product"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/IV_new_product"
+            tools:layout_editor_absoluteX="7dp" />
+
+
+        <TextView
+            android:id="@+id/Prices_new_product"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Price: $"
+            android:textAlignment="center"
+            android:textColor="#9400d3"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.233"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/IV_new_product" />
+
+        <TextView
+            android:id="@+id/Price_new_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/aclonica"
+            android:text="40"
+            android:textAlignment="center"
+            android:textColor="#9400d3"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/IV_new_product" />
+
+        <TextView
+            android:id="@+id/TV_new"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:text="NEW"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

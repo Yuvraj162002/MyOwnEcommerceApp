@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView_cart"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:padding="8dp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:textSize="18dp"
+            android:text="Product Name"/>
+
+            <TextView
+                android:id="@+id/name_my_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="120dp"
+                android:text=" Name"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textSize="18dp"
+                    android:text="Product Price"/>
+
+                <TextView
+                    android:id="@+id/price_my_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="Price"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textSize="18dp"
+                    android:text="Current Date"/>
+
+                <TextView
+                    android:id="@+id/current_date_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="130dp"
+                    android:text=" 03 10,2021"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textSize="18dp"
+                    android:text="Current Time"/>
+
+                <TextView
+                    android:id="@+id/time_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="120dp"
+                    android:text=" time"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textSize="18dp"
+                    android:text="Total Quantity"/>
+
+                <TextView
+                    android:id="@+id/totalquantity_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="120dp"
+                    android:text="3"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:text="Total Price"/>
+
+                <TextView
+                    android:id="@+id/total_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="right"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="$409"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+

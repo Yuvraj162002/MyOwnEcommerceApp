@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProductDetailedActivity">
+
+
+
+    <ImageView
+        android:id="@+id/IV_product_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="419dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toTopOf="@+id/buy_now_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Product Detail"
+        android:layout_marginLeft="6dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_product_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="50dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TV_product_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_product_detail"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/Rating_NO_product_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toStartOf="@id/ratingbar_product_detail"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/desp_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="2dp"
+                    android:fontFamily="@font/aclonica"
+                    android:text="@string/prdocut_details"
+                    android:textColor="#5c5c5c
+" />
+
+                <TextView
+                    android:id="@+id/price_product_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:text="Price:"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/dollar_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:text="$"
+                    android:textColor="#663399"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/actual_price_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textColor="#663399"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/quantity_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/plus_product"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/plusicon"
+                        />
+
+                <ImageView
+                    android:id="@+id/minus_product"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconminus" />
+                </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/add_to_cart_detail"
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="580dp"
+        android:drawableLeft="@drawable/ic_baseline_add_shopping_cart_24"
+        android:text="Add TO Cart"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <Button
+        android:id="@+id/buy_now_detail"
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="648dp"
+        android:backgroundTint="@color/purple_700"
+        android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
+        android:text="Buy Now"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
